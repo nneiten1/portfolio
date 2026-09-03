@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work - Nick Neitenbach</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <a class="site-title" href="index.html">Nick Neitenbach</a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="projects.html" aria-current="page">Work</a>
+            <a href="blog.html">Blog</a>
+            <a href="aboutme.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="page">
+        <section class="page-heading">
+            <p class="kicker">production</p>
+            <h1>My work</h1>
+        </section>
+
+        <section class="post-list">
+            <article class="post case-study" id="permit-system">
+                <p class="post-meta">legacy modernization / linux / database migration</p>
+                <h2>Modernizing a legacy permit system</h2>
+                <p>
+                    Owned and executed the migration of a long-running county permit
+                    application from aging physical infrastructure to a modern virtualized
+                    Linux environment. The work included moving a legacy Informix database into PostgreSQL,
+                    updating Perl CGI database connectivity, reconfiguring Apache, restoring
+                    scheduled posting processes, validating historical records, and planning
+                    the production cutover.
+                </p>
+                <ul class="tag-list" aria-label="Technologies used">
+                    <li>Ubuntu Server</li>
+                    <li>PostgreSQL</li>
+                    <li>Apache</li>
+                    <li>Perl CGI</li>
+                    <li>Proxmox</li>
+                    <li>Bash</li>
+                </ul>
+            </article>
+
+            <article class="post case-study" id="document-publishing">
+                <p class="post-meta">automation / web workflow / shared storage</p>
+                <h2>Building a public document publishing pipeline</h2>
+                <p>
+                    Designed a self-service workflow for publishing routine public documents.
+                    Authorized staff can upload a PDF with metadata through an internal web
+                    interface. A scheduled Linux process reads the metadata, places documents
+                    into the correct public structure, updates existing HTML at controlled
+                    marker locations, preserves permissions, and logs the result.
+                </p>
+                <ul class="tag-list" aria-label="Technologies used">
+                    <li>PHP</li>
+                    <li>JavaScript</li>
+                    <li>Bash</li>
+                    <li>jq</li>
+                    <li>awk</li>
+                    <li>NFS</li>
+                    <li>NAS</li>
+                </ul>
+            </article>
+
+            <article class="post case-study" id="ticketing-app">
+                <p class="post-meta">internal software / api integration / deployment</p>
+                <h2>Built and deployed a ticketing desktop app</h2>
+                <p>
+                    Built a desktop application for internal support requests using Electron
+                    and Zammad ticketing system API. The app handles ticket creation,
+                    authentication, API communication, automatic refresh, notifications, and
+                    packaging for Windows deployment through Group Policy.
+                </p>
+                <ul class="tag-list" aria-label="Technologies used">
+                    <li>Electron</li>
+                    <li>JavaScript</li>
+                    <li>REST APIs</li>
+                    <li>Zammad</li>
+                    <li>Windows</li>
+                    <li>Group Policy</li>
+                </ul>
+            </article>
+
+            <article class="post case-study" id="active-directory">
+                <p class="post-meta">directory services / dns / redundancy</p>
+                <h2>Improved Active Directory redundancy</h2>
+                <p>
+                    Added and configured an additional Samba Active Directory domain
+                    controller to improve authentication and DNS redundancy. The work
+                    included validating directory replication, DNS replication, SYSVOL
+                    behavior, service configuration, DNS forwarders, and client
+                    authentication.
+                </p>
+                <ul class="tag-list" aria-label="Technologies used">
+                    <li>Samba AD</li>
+                    <li>DNS</li>
+                    <li>LDAP</li>
+                    <li>Kerberos</li>
+                    <li>Group Policy</li>
+                    <li>Linux</li>
+                </ul>
+            </article>
+
+            <article class="post case-study" id="web-archive">
+                <p class="post-meta">retention / containers / scheduled jobs</p>
+                <h2>Automated public web archive retention</h2>
+                <p>
+                    Created an archival workflow for public web content using scheduled
+                    jobs, hashing, persistent storage, and containerized archiving tools.
+                    The system detects meaningful page changes and avoids unnecessary
+                    duplicate snapshots.
+                </p>
+                <ul class="tag-list" aria-label="Technologies used">
+                    <li>Docker</li>
+                    <li>ArchiveBox</li>
+                    <li>Bash</li>
+                    <li>MD5 hashing</li>
+                    <li>cron</li>
+                    <li>logging</li>
+                </ul>
+            </article>
+
+            <article class="post case-study" id="infrastructure">
+                <p class="post-meta">virtualization / storage / systems administration</p>
+                <h2>Supporting production infrastructure</h2>
+                <p>
+                    Regularly support a virtualized environment with multiple Proxmox nodes,
+                    dozens of virtual machines, Linux and Windows servers, shared storage,
+                    networking, endpoints, internal applications, and department workflows.
+                    Troubleshooting often spans application behavior, operating systems,
+                    network reachability, database connectivity, and storage permissions.
+                </p>
+                <ul class="tag-list" aria-label="Technologies used">
+                    <li>Proxmox VE</li>
+                    <li>Windows Server</li>
+                    <li>Linux</li>
+                    <li>TrueNAS</li>
+                    <li>Synology NAS</li>
+                    <li>NFS</li>
+                    <li>iSCSI</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="page-heading section-heading">
+            <p class="kicker">earlier projects</p>
+            <h1>Student and side work.</h1>
+        </section>
+
+        <section class="post-list">
+            <article class="post case-study" id="sticky-fingers">
+                <p class="post-meta">game / software engineering / team project</p>
+                <h2>
+                    <a href="https://github.com/isaachraga/GammaRepo/tree/main/SnakeEyes" target="_blank" rel="noreferrer">
+                        Sticky Fingers
+                    </a>
+                </h2>
+                <p>
+                    A local and online multiplayer game based on Snake Eyes. I worked on
+                    the art and CPU player behavior, including logic for choosing actions
+                    based on the current game state.
+                </p>
+                <ul class="tag-list" aria-label="Technologies and concepts used">
+                    <li>game development</li>
+                    <li>CPU logic</li>
+                    <li>multiplayer</li>
+                    <li>controller support</li>
+                    <li>SCRUM</li>
+                </ul>
+                <a class="quiet-link" href="https://gammateamse.itch.io/sticky-fingers" target="_blank" rel="noreferrer">Download</a>
+            </article>
+
+            <article class="post case-study" id="railway-clustering">
+                <p class="post-meta">data mining / machine learning / analysis</p>
+                <h2>
+                    <a href="https://github.com/evaizalith/railway-incident-clustering" target="_blank" rel="noreferrer">
+                        Railway Incident Clustering
+                    </a>
+                </h2>
+                <p>
+                    A data mining project that used clustering methods to search for
+                    patterns in railway incident data and evaluate how effective those
+                    clusters were.
+                </p>
+                <ul class="tag-list" aria-label="Technologies and concepts used">
+                    <li>data mining</li>
+                    <li>clustering</li>
+                    <li>machine learning</li>
+                    <li>analysis</li>
+                </ul>
+            </article>
+
+            <article class="post case-study" id="capes-list">
+                <p class="post-meta">database systems / frontend / group project</p>
+                <h2>
+                    <a href="https://github.com/nneiten1/CapesList" target="_blank" rel="noreferrer">
+                        Capes List
+                    </a>
+                </h2>
+                <p>
+                    A database systems project where I focused on the frontend and wrote
+                    SQL queries by hand before they were implemented into the application.
+                    It was also an early project where I worked with PHP.
+                </p>
+                <ul class="tag-list" aria-label="Technologies and concepts used">
+                    <li>SQL</li>
+                    <li>PHP</li>
+                    <li>frontend</li>
+                    <li>database design</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
