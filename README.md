@@ -1,1 +1,1 @@
-A website I'm building for my resume
+Portfolio and Blog
